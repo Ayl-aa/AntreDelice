@@ -1,0 +1,255 @@
+/*en tete*/
+.autreLien{
+    color: white;
+  }
+  
+  
+  #blocCard{
+    padding: 20px;
+    padding-top: 50px;
+  }
+  
+  #logo{
+      text-align:center;
+  margin:auto;
+  display:flex;
+  max-width : 100%;
+  height: 100%;
+  display: block;
+  
+  }
+  h1{
+    text-align: center;
+  }
+
+  .menu {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+  .menu * {
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .menu li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1.5em;
+    overflow: hidden;
+  }
+  .menu a {
+    padding: 0.3em 0;
+    color: #212121;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
+  }
+  .menu a:before,
+  .menu a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .menu a:before {
+    bottom: 100%;
+    display: block;
+    height: 3px;
+    width: 100%;
+    content: "";
+    background-color: #e67e22;
+  }
+  .menu a:after {
+    padding: 0.3em 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    content: attr(data-hover);
+    color: #212121;
+    white-space: nowrap;
+  }
+  .menu li:hover a,
+  .menu .current a {
+    transform: translateY(100%);
+  }
+
+
+
+
+
+/*form creation de recette*/
+
+#testbox div + form + input + select + textarea + p { 
+    padding: 0;
+    margin: auto;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 22px;
+    }
+
+
+  #testbox h1 {
+  margin: 15px 0;
+  font-weight: 400;
+  }
+
+  .status-input{
+    position: absolute; 
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    padding: auto;
+   }
+  
+  #testbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding: 3px;
+  
+  min-height: 100%;
+  }
+  #testbox form {
+    border-top: 10px solid #e68302;
+  width: 50%;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 2px 5px #ccc; 
+  margin-top: auto;
+  }
+  
+  #testbox input, select, textarea {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    }
+    #testbox input:hover, select:hover, textarea:hover {
+    outline: none;
+    box-shadow: 0 0 5px 0 #095484;
+    }
+    #testbox input {
+    
+    padding: 5px;
+    }
+    #testbox select {
+    width: 50%;
+    padding: 7px 0;
+    background: transparent;
+    }
+    #testbox textarea {
+    width: calc(100% - 2px);
+    padding: 5px;
+    }
+    .item {
+    position: relative;
+    margin: 10px 0;
+    }
+    .item:hover p, .item:hover i {
+    color: #095484;
+    }
+    input:hover, select:hover, textarea:hover {
+    box-shadow: 0 0 5px 0 #095484;
+    }
+    .status:hover input {
+    box-shadow: none;
+    }
+    .difficult label:hover input {
+    box-shadow: 0 0 5px 0 #095484;
+    }
+    .difficult, .difficult span {
+    width: auto;
+    vertical-align: middle;
+    }
+    .difficult input {
+    margin: 0;
+    }
+    .difficult span {
+    margin: 0 20px 0 5px;
+    }
+  
+    input[type="time"]::-webkit-inner-spin-button {
+    margin: 2px 22px 0 0;
+    }
+  
+    .item i {
+    right: 1%;
+    top: 30px;
+    z-index: 1;
+    }
+    [type="date"]::-webkit-calendar-picker-indicator {
+    right: 0;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+    }
+    .btn-block {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    }
+   .btn-block a{
+    width: auto;
+      padding: 10px;
+      border: none;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      
+      font-size: 16px;
+      color: #d07322;
+      cursor: pointer;
+      justify-items: center;
+      text-decoration: none;
+      padding-bottom: 20px;
+    }
+    .btn-block a:hover {
+     
+        color: #d3925a;
+        
+      }
+
+    #testbox button {
+      width: auto;
+      padding: 10px;
+      border: none;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      background-color: #d07322;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      justify-items: center;
+    }
+    #testbox button:hover {
+    background-color: #d98235;
+    }
+
+    @media (min-width: 568px) {
+      .plusieur-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      }
+      .plusieur-item input {
+      width: calc(50% - 20px);
+      
+      }
+
+      .plusieur-item .elementConnect {
+        width: calc(50% - 20px);
+        }
+      }
+    
+      #testbox #difficult{
+        width: 100%;
+      }
+      
+      
